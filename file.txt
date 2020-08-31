@@ -1,0 +1,40 @@
+Kotak Guaranteed Growth,27/Jun/03,54.0576
+Kotak Advantage Multiplier Fund II,21/Apr/06,17.2289
+Kotak Guaranteed Balanced,27/Jun/03,47.5307
+Kotak Aggressive Growth,13/Sep/04,59.4134
+Kotak Opportunities Fund,02/Oct/08,36.5526
+Kotak Dynamic Growth,27/Jun/03,61.0314
+Kotak Dynamic Floor Fund,14/Nov/06,24.5962
+Kotak Dynamic Balanced,27/Jun/03,53.7939
+Kotak Dynamic Bond,15/Apr/04,30.1282
+Kotak Dynamic Floating Rate,07/Dec/04,24.4545
+Kotak Dynamic Gilt,27/Jun/03,27.8978
+Kotak Pension Balanced,27/Jun/03,48.3019
+Kotak Pension Bond,15/Apr/04,30.2592
+Kotak Pension Floating Rate,07/Dec/04,24.5399
+Kotak Pension Gilt,27/Jun/03,28.4140
+Kotak Pension Floor Fund,13/Jul/09,15.7618
+Kotak Pension Opportunities Fund,17/Jul/09,20.7616
+Kotak Pension Growth,07/Jan/09,22.9450
+Kotak Group Balanced,27/Jun/03,54.7065
+Kotak Group Bond,15/Apr/04,32.0253
+Kotak Group Floating Rate,07/Dec/04,25.6391
+Kotak Group Gilt,27/Jun/03,28.9225
+Kotak Group Money Market,27/Jun/03,12.6954
+Kotak Group Dynamic Floor Fund,07/Jan/10,25.5183
+Classic Opportunities Fund,16/Dec/09,20.6382
+Dynamic Floor Fund II,17/Dec/09,15.8176
+Frontline Equity Fund,17/Dec/09,18.8913
+Balanced Fund,21/Dec/09,18.9647
+Pension Guarantee Fund,21/Dec/09,15.2726
+Pension Money Market Fund II,28/Dec/09,16.7900
+Money Market Fund,05/Jan/10,16.7607
+Pension Classic Opportunities Fund,07/Jan/10,21.1623
+Pension Floor Fund II,08/Jan/10,15.7163
+Pension Frontline Equity Fund,11/Jan/10,19.9946
+Pension Balanced Fund II,24/Jan/10,18.5552
+Guarantee Fund,05/Feb/10,15.9967
+Peak Guarantee Fund I,14/Feb/10,15.2850
+Discontinued Policy Fund,23/Mar/11,15.6545
+Kotak Group Secure Capital Fund,12/Apr/11,17.7250
+Kotak Group Short Term Bond Fund,18/Dec/13,11.0435
