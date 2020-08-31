@@ -16,31 +16,123 @@ use v5.10;
 use strict;
 use warnings;
 
+package MonthToNum;#For creating class in perl
 
-my $no_of_lines=0;
-my $no_of_subs=0;
-sub main 
-{ 
-    
-    my $stmt='/home/ubuntu/Documents/perl/convert/file.txt';
-    #my $file='/home/ubuntu/Documents/perl/convert/file1.txt';
-    open(FHR, '<', $stmt) or die "Failed to open file: $stmt";
+our $no_of_lines=0;#To count no of new lines present in text file
+our $no_of_subs=0;#To count no of substitution done in file
 
-	my %mon = (Jan  => '01', Feb  => '02', Mar => '03', Apr => '04', May => '05', Jun => '06', Jul => '07', Aug => '08', Sep => '09', Oct => '10', Nov => '11', Dec => '12',);
+our %mon =     (Jan  => '01', Feb  => '02',
+ 		Mar => '03', Apr => '04', 
+		May => '05', Jun => '06', 
+		Jul => '07', Aug => '08', 
+		Sep => '09', Oct => '10',
+ 		Nov => '11', Dec => '12',);#Created Hash
 
-my $key = 'Jan';
-     
 
-   while(my $String=<FHR>)
-   {
-	$no_of_lines++;	
-	
-	my $str =~ s/$key/% mon{$key}/g;
-	print("$str");
-	#open(FHR, '>', $file) or die "Failed to write file: $file";
-   }
-   print("$no_of_lines");
-   #print("$no_of_subs");
-close(FHR);
+sub readFile{
+
+ 	my $stmt='/home/ubuntu/Documents/perl/convert/file.txt';
+  	open(FHR, '<', $stmt) or die "Failed to open file: $stmt";
+	open(REPLACE, ">>file1.txt") or die "Failed to write file";
+  	#my @lines = <FHR>;
+  	
+
 }
-main();
+
+
+sub rdLine                                                    #Readline Function
+{
+        readFile();                                           #Calling File Open Function 
+	while(<FHR>){
+		$no_of_lines++;
+	}
+	print("No of new lines present in file: $no_of_lines\n");
+}
+rdLine();
+
+sub substitute{
+
+	readFile();
+	while(<FHR>)
+             {
+              if($_=~s/Jan/$mon{'Jan'}/i)
+	         {
+	          print REPLACE $_;
+	          $no_of_subs++;	  
+	         }
+  
+             elsif($_=~s/Feb/$mon{'Feb'}/i)
+	        {
+	         print REPLACE $_;
+	         $no_of_subs++;	  
+	        }
+	 
+             elsif($_=~s/Mar/$mon{'Mar'}/i)
+	        {
+       	         print REPLACE $_;
+	         $no_of_subs++;	  
+	        }
+
+             elsif($_=~s/Apr/$mon{'Apr'}/i)
+	        {
+	         print REPLACE $_;
+	         $no_of_subs++;	  
+	        }
+
+            elsif($_=~s/May/$mon{'May'}/i)
+	       {
+                print REPLACE $_;
+	        $no_of_subs++;	  
+	       }
+
+            elsif($_=~s/Jun/$mon{'Jun'}/i)
+	       {
+       	        print REPLACE $_;
+	        $no_of_subs++;	  
+	       }
+
+           elsif($_=~s/Jul/$mon{'Jul'}/i)
+	      {
+       	       print REPLACE $_;
+	       $no_of_subs++;	  
+	      }
+
+           elsif($_=~s/Aug/$mon{'Aug'}/i)
+	      {
+               print REPLACE $_;
+	       $no_of_subs++;	  
+	      }
+
+           elsif($_=~s/Sep/$mon{'Sep'}/i)
+	      {
+       	       print REPLACE $_;
+	       $no_of_subs++;	  
+	      }
+
+           elsif($_=~s/Oct/$mon{'Oct'}/i)
+	     {
+       	      print REPLACE $_;
+	      $no_of_subs++;	  
+	     }
+
+          elsif($_=~s/Nov/$mon{'Nov'}/i)
+	    {
+       	     print REPLACE $_;
+	     $no_of_subs++;	  
+	    }
+              
+         elsif($_=~s/Dec/$mon{'Dec'}/i)
+	    {
+       	     print REPLACE $_;
+	     $no_of_subs++;	  
+	    }
+
+         else 
+	     {
+	       next;
+             }
+  }
+print("No of Substitution done in above text file is : $no_of_subs\n");
+}  
+substitute();  	
+
