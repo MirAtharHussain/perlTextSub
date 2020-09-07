@@ -22,7 +22,7 @@ use Data::Dump;
 open(DATA, "<NAV_File_02092020.out") or die "Failed to read file";
 
 my %data; 
-my @columns;
+my @columns = ('Data','PfmName','Bank','Scheme_id','Scheme_name','nav');
 
 
 while (<DATA>)
@@ -31,14 +31,10 @@ while (<DATA>)
     my @list=split(',', $_);
     for (my $i=0; $i<=$#list; $i++)
     {
-        if ($.==1)  # collect the columns, if its first line.
-        {
-           $columns[$i] = $list[$i];
-        }
-        else        #collect the data, if its not the first line. 
-        {
-            push @{$data{@columns[$i]}}, $list[$i];
-        }
+        @columns[$i];
+               
+        push @{$data{@columns[$i]}}, $list[$i];
+        
     }
 }
 foreach (@columns)
